@@ -3,6 +3,12 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
 import Home from "./pages/Home/Home";
+import Dashboard from "./pages/Home/Dashboard/Dashboard";
+import Institution from "./pages/Home/Institution/Institution";
+import Settings from "./pages/Home/Settings/Settings";
+import Monitor from "./pages/Home/Monitor/Monitor";
+import Analytics from "./pages/Home/Analytics/Analytics";
+import Support from "./pages/Home/Support/Support";
 
 function App() {
   return (
@@ -11,7 +17,15 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Home />}>
+          <Route index element={<Dashboard />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="institution" element={<Institution />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="monitor" element={<Monitor />} />
+          <Route path="analytics" element={<Analytics />} />
+          <Route path="support" element={<Support />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
