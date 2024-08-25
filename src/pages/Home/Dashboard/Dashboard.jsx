@@ -1,5 +1,4 @@
-import Box from "@mui/material/Box";
-import { Container, Grid, Paper } from "@mui/material";
+import { Box, Container, Grid, Paper } from "@mui/material";
 import Widges from "../../../components/Home/Dashboard/Widges";
 import RecentActivities from "../../../components/Home/Dashboard/RecentActivities";
 import TopPerformance from "../../../components/Home/Dashboard/TopPerformance";
@@ -8,7 +7,7 @@ import QuickAccess from "../../../components/Home/Dashboard/QuickAccess";
 
 const Dashboard = () => {
   return (
-    <div>
+    <>
       <Box
         component="main"
         sx={{
@@ -38,7 +37,7 @@ const Dashboard = () => {
           </Grid>
         </Container>
       </Box>
-    </div>
+    </>
   );
 };
 

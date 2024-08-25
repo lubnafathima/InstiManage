@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import SignIn from "./pages/SignIn/SignIn";
-import SignUp from "./pages/SignUp/SignUp";
+import SignOut from "./pages/SignOut/SignOut";
 import Home from "./pages/Home/Home";
 import Dashboard from "./pages/Home/Dashboard/Dashboard";
 import Institution from "./pages/Home/Institution/Institution";
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/sign-up" element={<SignOut />} />
         <Route path="/home" element={<Home />}>
           <Route index element={<Dashboard />} />
           <Route path="dashboard" element={<Dashboard />} />
