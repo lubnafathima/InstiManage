@@ -213,7 +213,6 @@ export default function EnhancedTable() {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const [filteredRows, setFilteredRows] = useState(rows);
-  const [statusFilter, setStatusFilter] = useState('All');
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
